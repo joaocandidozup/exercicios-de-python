@@ -44,14 +44,18 @@ class Carteira:
             print(transacao.resumo())
 
     def gastos_totais(self):
-        return sum(
-            transacao.valor for transacao in self.transacoes if transacao.valor < 0
-        )
+        total_gastos = 0
+        for transacao in self.transacoes:
+            if transacao.valor < 0:
+                total_gastos += transacao.valor
+        return total_gastos
 
     def renda_total(self):
-        return sum(
-            transacao.valor for transacao in self.transacoes if transacao.valor > 0
-        )
+        total_renda = 0
+        for transacao in self.transacoes:
+            if transacao.valor > 0:
+                total_renda += transacao.valor
+        return total_renda
 
     def resumo_geral(self):
         print("\n*** Resumo Geral ***")
@@ -59,4 +63,5 @@ class Carteira:
         print(f"Renda total: R$ {self.renda_total():.2f}")
         print(f"Gastos totais: R$ {self.gastos_totais():.2f}")
         print(f"Saldo final: R$ {self.saldo():.2f}")
+
 
