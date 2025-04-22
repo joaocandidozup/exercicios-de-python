@@ -3,9 +3,9 @@ Uma startup está criando um sistema para calcular o bônus de seus funcionário
 Objetivo do desafio:
 Você deve implementar classes e métodos utilizando os conceitos de Programação Orientada a Objetos (POO). Além disso, é necessário escrever testes automatizados para garantir que o sistema funciona como esperado.
 
-Enunciado do Desafio
+## Enunciado do Desafio
 Crie um sistema com as seguintes etapas:
-Etapa 1 – Criação das classes:
+### Etapa 1 – Criação das classes:
 Crie uma classe abstrata chamada Funcionario com os seguintes itens:
 
 
@@ -42,18 +42,18 @@ Possui um atributo extra chamado bonus_adicional.
 Implementa o método calcular_bonus retornando 20% do salário mais o valor de bonus_adicional.
 
 
-Etapa 2 – Decorator para log:
+### Etapa 2 – Decorator para log:
 Crie um decorator chamado logar_acao que exibe uma mensagem de log sempre que um bônus for mostrado na tela.
 
 
-Etapa 3 – Classe de sistema:
+### Etapa 3 – Classe de sistema:
 Crie uma classe chamada SistemaRH com um método chamado mostrar_bonus, decorado com @logar_acao.
 
 
 Este método deve receber um funcionário e exibir seu nome e o valor do bônus.
 
 
-Etapa 4 – Testes automatizados:
+### Etapa 4 – Testes automatizados:
 Usando a biblioteca unittest, crie testes para verificar:
 
 
@@ -67,7 +67,7 @@ Se o método mostrar_bonus imprime corretamente a mensagem (utilize unittest.moc
 
 
 
-Entregáveis
+## Entregáveis
 Você deverá entregar três arquivos:
 funcionarios.py – Contendo as classes Funcionario, FuncionarioComum e Gerente.
 
